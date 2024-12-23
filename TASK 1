@@ -53,8 +53,8 @@ def library_management_system():
                 # Calculate overdue fine
                 if returned_date > borrowed_date:
                     overdue_days = (returned_date - borrowed_date).days
-                    fine = overdue_days * 5  # $5 per day
-                    print(f"Late return! You have a fine of ${fine:.2f} for {overdue_days} overdue days.")
+                    fine = overdue_days * 5  # Rs5 per day
+                    print(f"Late return! You have a fine of Rs{fine:.2f} for {overdue_days} overdue days.")
                 else:
                     print("Returned on time. No fine.")
             else:
